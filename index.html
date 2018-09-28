@@ -9,10 +9,69 @@
     <title></title>
     <link href="app.css" rel="stylesheet">
 </head>
-<body>
-	<header></header>
-	<main></main>
-	<footer></footer>
+
+<body class="container">
+	<header>
+		<h1 id="title">Survey Form</h1>
+	</header>
+
+	<main>
+		<p id="description">Let us know about your preferences as a developer</p>
+
+		<form id="survey-form">
+			<div class="contact-info">
+				<label id="name-label" for="name"><sup>*</sup>Name: <input id="name" type="text" placeholder="Enter your full name.." required></label>
+				<label id="email-label" for="email"><sup>*</sup>Email: <input id="email" type="email" placeholder="Enter a valid email address.." required></label>
+				<label id="number-label" for="number"><sup>*</sup>Age: <input id="number" type="number" min="18" max="100" placeholder="Enter your age.." required></label>
+			</div>
+			<div class="fav-lang">
+				<label for="dropdown"> Favorite Language:
+					<select id="dropdown" name="language">
+						<option value="Javascript">Javascript</option>
+						<option value="Python">Python</option>
+						<option value="C++">C++</option>
+					</select>
+				</label>
+			</div>			
+			<div class="hours-code">
+				<p>Hours coding per day:</p>
+				<label for="hours-one"> 2-6
+					<input id="hours-one" type="radio" name="hours" value="1"  checked>
+				</label>
+				<label for="hours-two"> 6-10
+					<input id="hours-two" type="radio" name="hours" value="2">
+				</label>
+				<label for="hours-three"> 10-14
+					<input id="hours-three" type="radio" name="hours" value="3">
+				</label>
+			</div>
+			<div class="frameworks-used">
+				<p>Frameworks I work with:</p>
+				<ul>
+					<li>
+						<label for="hours-one"> ReactJs
+							<input id="framework-one" type="checkbox" name="frameworks" value="1">
+						</label>
+					</li>
+					<li>
+						<label for="hours-two"> AngularJS
+							<input id="framework-two" type="checkbox" name="frameworks" value="2">
+						</label>
+					</li>
+					<li>
+						<label for="hours-three-three"> Ember
+							<input id="hoframework-" type="checkbox" name="frameworks" value="3">
+						</label>
+					</li>
+				</ul>
+			</div>
+			
+			<textarea class="comments" name="comment" placeholder="Comments about your a experience as a developer.." maxlength="400" rows="10" cols="50"></textarea>
+
+			<button id="submit" type="submit">Submit</button>
+		</form>
+	</main>
+
 	<!-- Script Loads Freecodecamp tests -->
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>
 </body>
