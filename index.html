@@ -11,68 +11,62 @@
 </head>
 
 <body class="container">
-	<header>
-		<h1 id="title">Survey Form</h1>
-	</header>
-
-	<main>
-		<p id="description">Let us know about your preferences as a developer</p>
-
-		<form id="survey-form">
-			<div class="contact-info">
-				<label id="name-label" for="name"><sup>*</sup>Name: </label>
-				<input id="name" type="text" placeholder="Enter your full name.." required>
-				<label id="email-label" for="email"><sup>*</sup>Email: </label>
-				<input id="email" type="email" placeholder="Enter a valid email address.." required>
-				<label id="number-label" for="number"><sup>*</sup>Age: </label>
-				<input id="number" type="number" min="18" max="100" placeholder="Enter your age.." required>
-			</div>
-			<div class="fav-lang">
-				<label for="dropdown"> Favorite Language:</label>
-				<select id="dropdown" name="language">
-						<option value="Javascript">Javascript</option>
-						<option value="Python">Python</option>
-						<option value="C++">C++</option>
-				</select>
-			</div>			
-			<div class="hours-code">
-				<p class="text">Hours coding per day:</p>
-				<label for="hours-one" class="one">2-6 <input id="hours-one" type="radio" name="hours" value="1"  checked></label>
-				<label for="hours-two" class="two">6-10 <input id="hours-two" type="radio" name="hours" value="2"></label>
-				<label for="hours-three" class="three">10-14 <input id="hours-three" type="radio" name="hours" value="3"></label>
-			</div>
-			<div class="frameworks-used">
-				<p>Frameworks I work with:</p>
-				<ul class="frameworks">
-					<li>
-						<input id="framework-one" type="checkbox" name="frameworks" value="1">
-						<label for="hours-one"> ReactJs</label>
-					</li>
-					<li>
-						<input id="framework-two" type="checkbox" name="frameworks" value="2">
-						<label for="hours-two"> AngularJS</label>
-					</li>
-					<li>
-						<input id="hoframework-" type="checkbox" name="frameworks" value="3">
-						<label for="hours-three-three"> Ember</label>
-					</li>
-				</ul>
-			</div>
-			
-			<textarea class="comments" name="comment" placeholder="Comments about your a experience as a developer.." maxlength="400" rows="10" cols="50"></textarea>
-
-			<button id="submit" type="submit">Submit</button>
-		</form>
-	</main>
-
-	<footer>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <main>
+        <p id="description">Let us know about your preferences as a developer</p>
+        <form id="survey-form">
+            <div class="contact-info">
+                <label id="name-label" for="name"><sup>*</sup>Name: </label>
+                <input id="name" type="text" placeholder="Enter your full name.." required>
+                <label id="email-label" for="email"><sup>*</sup>Email: </label>
+                <input id="email" type="email" placeholder="Enter a valid email address.." required>
+                <label id="number-label" for="number"><sup>*</sup>Age: </label>
+                <input id="number" type="number" min="18" max="100" placeholder="Enter your age.." required>
+            </div>
+            <div class="fav-lang">
+                <label for="dropdown"> Favorite Language:</label>
+                <select id="dropdown" name="language">
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="C++">C++</option>
+                </select>
+            </div>
+            <div class="hours-code">
+                <p class="text">Hours coding per day:</p>
+                <label for="hours-one" class="one">2-6 <input id="hours-one" type="radio" name="hours" value="1" checked></label>
+                <label for="hours-two" class="two">6-10 <input id="hours-two" type="radio" name="hours" value="2"></label>
+                <label for="hours-three" class="three">10-14 <input id="hours-three" type="radio" name="hours" value="3"></label>
+            </div>
+            <div class="frameworks-used">
+                <p>Frameworks I work with:</p>
+                <ul class="frameworks">
+                    <li>
+                        <input id="framework-one" type="checkbox" name="frameworks" value="1">
+                        <label for="hours-one"> ReactJs</label>
+                    </li>
+                    <li>
+                        <input id="framework-two" type="checkbox" name="frameworks" value="2">
+                        <label for="hours-two"> AngularJS</label>
+                    </li>
+                    <li>
+                        <input id="hoframework-" type="checkbox" name="frameworks" value="3">
+                        <label for="hours-three-three"> Ember</label>
+                    </li>
+                </ul>
+            </div>
+            <textarea class="comments" name="comment" placeholder="Comments about your a experience as a developer.." maxlength="400" rows="10" cols="50"></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
         <a href="https://www.linkedin.com/in/anaevgal/" target="_blank">
             <img src="images/linkedIn.png" alt="Linked In logo." class="linkedIn_logo">
         </a>
     </footer>
-
-	<!-- Script Loads Freecodecamp tests -->
-	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" ></script>
+    <!-- Script Loads Freecodecamp tests -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

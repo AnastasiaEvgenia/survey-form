@@ -6,17 +6,13 @@ body {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+
 header {
 	width: 95%;
 	text-align: center;
 	padding: 0 2px;
 }
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: rgba(205,81,81,0.8);
-}
+
 
 main {
 	background-color: rgba(128,128,128,0.4);
@@ -26,12 +22,28 @@ main {
 	margin-bottom: 10px;
 }
 
+
+footer {
+	width: 95%;
+	text-align: right;
+	padding: 0 2px;
+}
+
+/* -------------------------------------------------------------- */
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(205,81,81,0.8);
+}
+
+
 #description {
 	font-style: italic;
 	text-align: center;
 }
 
-
+/* -------------------------------------------------------------- */
 .contact-info {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -40,10 +52,12 @@ main {
 	margin: 10px;
 }
 
+
 .contact-info label {
 	justify-self: left;
 	margin-right: 10px;
 }
+
 
 .contact-info input,
 #dropdown,
@@ -53,6 +67,7 @@ main {
 	border-radius: 10px;
 }
 
+/* -------------------------------------------------------------- */
 .fav-lang {
 	margin: 20px 10px 20px 10px;
 	display: flex;
@@ -60,6 +75,7 @@ main {
 	align-items: center;
 	justify-content: stretch;
 }
+
 
 .fav-lang label {
 	margin-right: 10px;
@@ -74,6 +90,7 @@ main {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+/* -------------------------------------------------------------- */
 .hours-code {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -86,23 +103,30 @@ main {
 	margin: 15px 10px 5px;
 }
 
+
 .text {
 	grid-area: text;
 	justify-self: left;
 }
+
+
  #hours-one,
  .one {
  	grid-area: option-one;
  }
-  #hours-two,
-  .two {
+
+
+ #hours-two,
+ .two {
  	grid-area: option-two;
  }
+
 
  #hours-three,
  .three {
  	grid-area: option-three;
  }
+
 
  .one,
  .two,
@@ -112,10 +136,12 @@ main {
  	align-items: center;
  }
 
+/* -------------------------------------------------------------- */
  .frameworks-used {
  	display: flex;
  	margin: 10px 10px;
  }
+
 
  .frameworks-used p {
  	max-width: 40%;
@@ -123,16 +149,19 @@ main {
  	margin-right: 10px;
  }
 
+
 .frameworks {
 	list-style: none;
 	max-width: 60%;
 	padding-left: 5px;
 }
 
+/* -------------------------------------------------------------- */
 .comments {
 	margin: 5px;
 	width: 95%;
 }
+
 
 #submit {
 	height: 42px;
@@ -142,33 +171,34 @@ main {
 	margin: 0px 5px 5px 5px;
 }
 
-footer {
-	width: 95%;
-	text-align: right;
-	padding: 0 2px;
-}
+/* -------------------------------------------------------------- */
 .linkedIn_logo {
     height: 20px;
 }
 
+/* -------------------------------------------------------------- */
 @media (min-width: 438px) {
 	.hours-code {
 		grid-template-columns: minmax(150px, 225px) auto;
 	}
 
+
 	.frameworks-used p {
 	 	max-width: 60%;
 	 }
+
 
 	.frameworks {
 		max-width: 40%;
 	}
 }
 
+
 @media (min-width: 560px) {
 	#survey-form {
 		padding: 5%;
 	}
+
 
 	.linkedIn_logo {
 		height: 25px;
@@ -179,6 +209,7 @@ footer {
 		width: 100%;
 	}
 }
+
 
 @media (min-width: 750px) {
 	html,

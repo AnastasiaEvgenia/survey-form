@@ -2,7 +2,7 @@
 
 ## Description.
 
-Build a Survey Form
+Build a Survey Form that is responsive for all devices and works on all browsers.
 
 ## Running the app
 
