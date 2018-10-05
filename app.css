@@ -1,0 +1,93 @@
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(205,81,81,0.8);
+}
+
+main {
+	background-color: rgba(128,128,128,0.4);
+	border: 2px double black;
+	font-size: 1.3em;
+	width: 95%;
+}
+
+#description {
+	font-style: italic;
+	text-align: center;
+}
+
+.contact-info {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 0.25fr 0.7fr;
+	grid-row-gap: 5px;
+	margin: 10px;
+}
+
+.contact-info label {
+	justify-self: center;
+}
+
+.contact-info input,
+#dropdown,
+.comments {
+	border-style: groove;
+	border-radius: 10px;
+}
+
+.fav-lang {
+	margin: 15px 10px 10px 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#dropdown {
+	width: 120px;
+	height: 45px;
+	margin: 0 0 0 5px;
+}
+
+.hours-code {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 0.6fr 0.3fr;
+	grid-template-areas: 
+	"text option-one"
+	"text option-two"
+	"text option-three";
+	justify-items: end;
+	margin: 15px 10px;
+}
+
+.text {
+	grid-area: text;
+
+}
+ #hours-one,
+ .one {
+ 	grid-area: option-one;
+ }
+  #hours-two,
+  .two {
+ 	grid-area: option-two;
+ }
+
+ #hours-three,
+ .three {
+ 	grid-area: option-three;
+ }
+
+.frameworks {
+	list-style: none;
+}
+
