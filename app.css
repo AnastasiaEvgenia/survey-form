@@ -6,6 +6,10 @@ body {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+header {
+	width: 95%;
+	text-align: center;
+}
 .container {
 	display: flex;
 	flex-direction: column;
@@ -18,6 +22,7 @@ main {
 	border: 2px double black;
 	font-size: 1.3em;
 	width: 95%;
+	margin-bottom: 10px;
 }
 
 #description {
@@ -39,13 +44,14 @@ main {
 
 .contact-info input,
 #dropdown,
-.comments {
+.comments,
+#submit {
 	border-style: groove;
 	border-radius: 10px;
 }
 
 .fav-lang {
-	margin: 15px 10px 10px 10px;
+	margin: 20px 10px 20px 10px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -54,19 +60,21 @@ main {
 #dropdown {
 	width: 120px;
 	height: 45px;
-	margin: 0 0 0 5px;
+	margin: 0 0 0 10px;
+	font-size: 0.9em;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 .hours-code {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-columns: 0.6fr 0.3fr;
+	grid-template-columns: 0.55fr 0.4fr;
 	grid-template-areas: 
 	"text option-one"
 	"text option-two"
 	"text option-three";
-	justify-items: end;
-	margin: 15px 10px;
+	justify-items: start;
+	margin: 15px 10px 5px;
 }
 
 .text {
@@ -87,7 +95,47 @@ main {
  	grid-area: option-three;
  }
 
+ .one,
+ .two,
+ .three {
+ 	display: flex;
+ 	flex-direction: row-reverse;
+ 	align-items: center;
+
+ }
+
+ .frameworks-used {
+ 	display: flex;
+ 	margin: 10px 10px;
+ }
+
+ .frameworks-used p {
+ 	width: 100%;
+ }
+
 .frameworks {
 	list-style: none;
+	width: 100%;
+	padding-left: 20px;
 }
 
+.comments {
+	margin: 5px;
+	width: 95%;
+}
+
+#submit {
+	height: 42px;
+	font-size: 0.9em;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	float: right;
+	margin: 0px 5px 5px 5px;
+}
+
+footer {
+	width: 95%;
+	text-align: right;
+}
+.linkedIn_logo {
+    height: 20px;
+}
